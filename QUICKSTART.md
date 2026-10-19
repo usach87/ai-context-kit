@@ -36,13 +36,45 @@ Follow the setup guide for [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](pla
 
 Create a separate **Project** in ChatGPT or Claude for `project-one` (or an equivalent workspace in another client, when available). Start new chats **inside that Project** so its persistent instructions apply.
 
-## 5. Set the GitHub directory in Project Instructions
+## 5. Configure Project Instructions: context and AI role
 
-Open **Project Instructions** for the AI Project you created and paste:
+Open **Project Instructions** in the AI Project you created. Specify both the GitHub location and **what kind of help** you want. Copy the example and replace the bracketed values:
 
-> GitHub repository: `username/my-ai-context`. Branch: `main`. Active project directory: `projects/project-one/`. At the start of a new session, read `projects/project-one/PROJECT.md`, `projects/project-one/CONTEXT.md`, and `projects/project-one/INSTRUCTIONS.md` from that repository and branch. Do not read other projects. If any file is unavailable, report the exact path and error; never substitute another project's context. Propose updates only inside this directory and write only after my approval.
+```text
+Project:
+- GitHub repository: username/my-ai-context
+- Branch: main
+- Directory: projects/project-one/
+- Expected name in PROJECT.md: [project name]
 
-Replace the repository, branch, and directory. **A Git branch and a project directory are different concepts.** Project instructions provide an exact target, but do not grant GitHub access or guarantee that every client will obey them. If persistent instructions are unavailable, paste this at the start of a chat.
+AI role:
+- Primary: [developer / analyst / designer / general assistant]
+- Additional roles: [optional]
+- Preferences: [e.g. concise answers, detailed plans, code examples]
+
+Rules:
+1. At the start of a new session, read PROJECT.md, CONTEXT.md,
+   and INSTRUCTIONS.md only from the specified directory and branch.
+2. Verify that all three files are accessible and compare the name
+   in PROJECT.md with the expected name. If the path is missing,
+   a read fails, or the names differ, report the issue and ask.
+   Never guess a directory or substitute another project's files.
+3. After verification, briefly report the actual repository,
+   branch, directory, and project name you read.
+4. Work in the selected role while adapting to the user's task.
+   Distinguish verified facts, assumptions, and proposals.
+5. After meaningful work, propose updates only to this project's
+   CONTEXT.md. Show changes and await approval before writing.
+   Do not modify other projects.
+6. If GitHub access is unavailable, do not claim to have read
+   the files; ask the user to provide them manually.
+```
+
+**Roles shape the help you receive:** a developer focuses on architecture and code, an analyst on requirements and validation, and a designer on UX and visual solutions. You can select a general assistant or multiple roles and switch roles for a specific task.
+
+Fill in the project name in `PROJECT.md` during step 2 before enabling the name check. The expected name should match the file content; it does not have to match the folder or AI Project name.
+
+**Important:** a Git branch (`main`) is different from a directory (`projects/project-one/`). Project Instructions do not grant GitHub access or technically guarantee isolation; verify actual file reads. If persistent instructions are unavailable, paste this at the beginning of a new chat.
 
 ## 6. Work and save context
 
