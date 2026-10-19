@@ -1,42 +1,39 @@
 # AI Context Kit
 
-**Portable project context for ChatGPT, Claude, Cursor, Codex, and other AI assistants.**
+**Share project context between AI chats — without depending on one AI platform.**
 
-AI Context Kit is a lightweight, open set of Markdown templates to keep project instructions, current status, decisions, tasks, and sources in one place. It works for software, research, business, creative, and personal projects.
+AI Context Kit is a small, open Markdown template for **any project**: business, research, creative, personal, or software. Keep a common source of truth in your own GitHub repository, and use it from ChatGPT, Claude, or another AI assistant.
 
-## Start here
+## Get started
 
 1. Read [QUICKSTART.md](QUICKSTART.md).
-2. Copy the files from [template/](template/) into your own project repository.
-3. Fill in PROJECT.md, INSTRUCTIONS.md, and CONTEXT.md.
-4. Connect an AI client using its built-in GitHub integration, connector, or MCP tools where available. Otherwise, upload or paste the files manually. **A separate MCP server is not required.**
-5. Review and commit context updates; ask the next assistant to read the latest files.
+2. Copy the **three files** in [template/](template/) into your own repository.
+3. Ask your AI assistant to help fill them in.
+4. Connect GitHub through an available integration, connector, or MCP (optional), or share the files manually.
+5. Ask each new AI chat to read the latest files. Review and approve updates before saving.
 
-**Never put secrets or sensitive personal information in a public repository.** Your own project repository can be private.
-
-## What is included
+## The three essential files
 
 | File | Purpose |
 | --- | --- |
-| PROJECT.md | Purpose, scope, goals, constraints |
-| INSTRUCTIONS.md | Rules for AI collaboration |
-| CONTEXT.md | Current project state and handoff |
-| DECISIONS.md | Accepted decisions and rationale |
-| TASKS.md | Next steps and progress |
-| SOURCES.md | References and provenance |
-| agents/ | Optional AI role definitions |
-| skills/ | Reusable working procedures |
+| [PROJECT.md](template/PROJECT.md) | Project goals, audience, scope, constraints |
+| [CONTEXT.md](template/CONTEXT.md) | Current state, key decisions, recent progress, next step |
+| [INSTRUCTIONS.md](template/INSTRUCTIONS.md) | How an AI assistant should use and update the shared context |
 
-See [ChatGPT + GitHub integration test instructions](platforms/chatgpt.md) and other [platform notes](platforms/).
+Need more structure later? See [optional/](optional/) for separate decision, task, and source logs. These are **not required** for the MVP.
 
-## Design principles
+Platform-specific tips: [ChatGPT](platforms/chatgpt.md), [Claude](platforms/claude.md), [Cursor](platforms/cursor.md), [Codex](platforms/codex.md).
 
-- **Platform independent:** Markdown is the source of truth.
-- **User owned:** Keep project data in your own repository or local files.
-- **Explicit updates:** AI proposes changes; users approve important writes.
-- **No backend required:** No database, custom API, or separate MCP server required; connection methods vary by AI client.
-- **Honest about synchronization:** Shared GitHub files enable cross-client access only where the client has the necessary read/write tools. Context is not automatically loaded into every conversation.
+## Principles
+
+- **Universal:** No coding knowledge required; usable for business and personal projects.
+- **Portable:** Plain Markdown, not tied to one model or chat.
+- **User-owned:** Your own repository and revision history.
+- **MCP optional:** A suitable built-in GitHub integration is enough; manual sharing is a fallback.
+- **Explicit approval:** Review significant context changes before writing.
+- **No automatic chat sync:** Assistants must fetch fresh context and save approved changes; capabilities vary by client.
+- **Privacy:** Keep sensitive information out of public repositories; use a private repository when needed.
 
 ## Status
 
-Early MVP. Feedback and contributions are welcome.
+Minimal MVP. No backend or custom MCP server required.
