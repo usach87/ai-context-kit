@@ -75,7 +75,11 @@ After meaningful work, ask the assistant to propose changes to `projects/project
 
 ## 7. Continue in another AI chat
 
-Open an AI workspace with the same configured repository and path. Ask it to fetch the latest files and confirm their exact paths. If settings do not transfer between platforms, repeat step 5. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
+If you start a new chat inside an already configured AI Project, you do not need to configure Project Instructions again.
+
+If you switch to another AI platform or create a new AI Project, first connect GitHub (step 3) and configure Project Instructions (step 5) with the same repository and directory.
+
+Before continuing, ask the AI to load the latest context files and confirm their paths. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
 
 ## 8. Add more projects
 
