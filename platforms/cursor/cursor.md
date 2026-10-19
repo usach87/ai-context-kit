@@ -2,7 +2,7 @@
 
 ## Connect a repository
 
-Official Cursor guides: [Quickstart](https://docs.cursor.com/en/get-started/quickstart), [MCP integrations](https://docs.cursor.com/en/tools/mcp), [GitHub for web agents](https://docs.cursor.com/en/background-agent/web-and-mobile).
+Official Cursor guides: [Quickstart](https://cursor.com/docs/get-started/quickstart), [MCP integrations](https://cursor.com/docs/mcp), [GitHub for web agents](https://cursor.com/docs/integrations/github).
 
 **In Cursor IDE**, clone the GitHub repository and open it locally; no connector is needed to read these local context files. For GitHub API actions, configure a GitHub MCP integration if needed. **Cursor Web Agent** uses a separate GitHub connection. Verify write permissions before committing.
 
