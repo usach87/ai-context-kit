@@ -1,5 +1,11 @@
 # Claude
 
+## Connect GitHub
+
+Official Claude guide: [Use the GitHub integration](https://support.claude.com/en/articles/10167454-use-the-github-integration).
+
+In a Claude chat, choose **+ → Add from GitHub**, authenticate if prompted, and select the relevant repository files. Claude Projects can also add GitHub content to project knowledge. Verify actual file access; do not assume write permission.
+
 🌐 **Language:** English · [Русский](claude.ru.md)
 
 [← README](../../README.md) · [Quick start](../../QUICKSTART.md)
