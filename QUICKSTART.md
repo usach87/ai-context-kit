@@ -12,11 +12,11 @@ Create a GitHub repository such as `username/my-ai-context`. Copy [PROJECTS.md](
 my-ai-context/
 ├── PROJECTS.md
 └── projects/
-    ├── Sophia/
+    ├── project-one/
     │   ├── PROJECT.md
     │   ├── CONTEXT.md
     │   └── INSTRUCTIONS.md
-    └── I-Design-Award/
+    └── project-two/
         ├── PROJECT.md
         ├── CONTEXT.md
         └── INSTRUCTIONS.md
@@ -24,9 +24,9 @@ my-ai-context/
 
 ## 2. Rename and fill the example project folder
 
-Rename `example-project` to a recognizable, unique folder name such as `Sophia`. **No separate project ID is required.** Keep only one language's three files: English `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`, or Russian `PROJECT.ru.md`, `CONTEXT.ru.md`, `INSTRUCTIONS.ru.md` (remove `.ru` from the filenames in your repository). Remove unused language versions.
+Rename `example-project` to a recognizable, unique folder name such as `project-one`. **No separate project ID is required.** Keep only one language's three files: English `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`, or Russian `PROJECT.ru.md`, `CONTEXT.ru.md`, `INSTRUCTIONS.ru.md` (remove `.ru` from the filenames in your repository). Remove unused language versions.
 
-Fill the files with AI assistance, review the result, and add the project name, description, and exact directory such as `projects/Sophia/` to `PROJECTS.md`.
+Fill the files with AI assistance, review the result, and add the project name, description, and exact directory such as `projects/project-one/` to `PROJECTS.md`.
 
 ## 3. Connect GitHub
 
@@ -36,13 +36,13 @@ Follow the setup guide for [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](pla
 
 If your AI client supports persistent project instructions, create a separate AI workspace for this project and paste:
 
-> GitHub repository: `username/my-ai-context`. Branch: `main`. Active project directory: `projects/Sophia/`. At the start of a new session, read `projects/Sophia/PROJECT.md`, `projects/Sophia/CONTEXT.md`, and `projects/Sophia/INSTRUCTIONS.md` from that repository and branch. Do not read other projects. If any file is unavailable, report the exact path and error; never substitute another project's context. Propose updates only inside this directory and write only after my approval.
+> GitHub repository: `username/my-ai-context`. Branch: `main`. Active project directory: `projects/project-one/`. At the start of a new session, read `projects/project-one/PROJECT.md`, `projects/project-one/CONTEXT.md`, and `projects/project-one/INSTRUCTIONS.md` from that repository and branch. Do not read other projects. If any file is unavailable, report the exact path and error; never substitute another project's context. Propose updates only inside this directory and write only after my approval.
 
 Replace the repository, branch, and directory. **A Git branch and a project directory are different concepts.** Project instructions provide an exact target, but do not grant GitHub access or guarantee that every client will obey them. If persistent instructions are unavailable, paste this at the start of a chat.
 
 ## 5. Work and save context
 
-After meaningful work, ask the assistant to propose changes to `projects/Sophia/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
+After meaningful work, ask the assistant to propose changes to `projects/project-one/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
 
 ## 6. Continue in another AI chat
 
