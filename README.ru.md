@@ -58,7 +58,7 @@ my-ai-context/
 
 ## Статус
 
-Минимальный MVP.
+Public Beta.
 
 **Следующий шаг:** [Быстрый старт на русском](QUICKSTART.ru.md) · [English README](README.md)
 
