@@ -1,12 +1,14 @@
 # AI Context Kit
 
+🌐 **Language:** English · [Русский](README.ru.md)
+
 **Share project context between AI chats — without depending on one AI platform.**
 
 AI Context Kit is a small, open Markdown template for **any project**: business, research, creative, personal, or software. Keep a common source of truth in your own GitHub repository, and use it from ChatGPT, Claude, or another AI assistant.
 
 ## Get started
 
-1. Read [QUICKSTART.md](QUICKSTART.md).
+1. Read [QUICKSTART.md](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
 2. Copy the **three files** in [template/](template/) into your own repository.
 3. Ask your AI assistant to help fill them in.
 4. Connect GitHub through an available integration, connector, or MCP (optional), or share the files manually.
