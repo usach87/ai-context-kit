@@ -1,5 +1,9 @@
 # Quick start
 
+🌐 **Language:** English · [Русский](QUICKSTART.ru.md)
+
+[← AI Context Kit README](README.md) · [README на русском](README.ru.md)
+
 AI Context Kit lets you continue **any project** in another AI chat without starting from scratch.
 
 ## 1. Create your project repository
