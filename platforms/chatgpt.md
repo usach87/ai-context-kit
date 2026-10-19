@@ -1,5 +1,9 @@
 # ChatGPT + GitHub integration: test plan
 
+🌐 **Language:** English · [Русский](chatgpt.ru.md)
+
+[← README](../README.md) · [Quick start](../QUICKSTART.md)
+
 Use an available GitHub integration or connector in ChatGPT; a separate official GitHub MCP server is **not required** for this workflow. Read and write capabilities depend on the environment, plan, and permissions. A built-in GitHub integration is not necessarily equivalent to a separately configured MCP server.
 
 ## Preconditions
