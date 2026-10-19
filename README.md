@@ -24,7 +24,7 @@ AI Context Kit is a small, open Markdown template for **any project**: business,
 
 Need more structure later? See [optional/](optional/) for separate decision, task, and source logs. These are **not required** for the MVP.
 
-Platform setup guides: [ChatGPT](platforms/chatgpt.md), [Claude](platforms/claude.md), [Cursor](platforms/cursor.md), [Codex](platforms/codex.md). ([Русские версии](README.ru.md))
+Platform setup guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), [Codex](platforms/codex/codex.md). ([Русские версии](README.ru.md))
 
 ## Principles
 
