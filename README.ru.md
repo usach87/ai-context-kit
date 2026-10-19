@@ -18,11 +18,11 @@ AI Context Kit — открытый набор Markdown-шаблонов для 
 my-ai-context/
 ├── PROJECTS.md
 └── projects/
-    ├── family-app/
+    ├── project-one/
     │   ├── PROJECT.md
     │   ├── CONTEXT.md
     │   └── INSTRUCTIONS.md
-    └── tea-business/
+    └── project-two/
         ├── PROJECT.md
         ├── CONTEXT.md
         └── INSTRUCTIONS.md
