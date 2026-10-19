@@ -10,7 +10,7 @@ AI Context Kit is a small, open Markdown toolkit for **multiple projects**: busi
 
 1. Follow the [multi-project quick start](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
 2. Create a shared GitHub repository and copy [PROJECTS.md](PROJECTS.md) to its root ([Russian template](PROJECTS.ru.md)).
-3. For each project, copy [projects/example-project/](projects/example-project/), rename it, and use `projects/project-folder/` and copy the **three files** from [projects/example-project/](projects/example-project/) into it. [Russian versions](projects/example-project/PROJECT.ru.md) are available; remove `.ru` from the filenames.
+3. For each project, copy [projects/example-project/](projects/example-project/) into your repository and rename the folder (for example, `projects/project-one/`). Keep the **three files** in your chosen language; for [Russian templates](projects/example-project/PROJECT.ru.md), remove `.ru` from their filenames.
 4. Register the project in `PROJECTS.md`, then connect your AI client to GitHub or share the files manually.
 5. Set the active project's repository path in your AI workspace instructions or opening chat prompt. Read and update **only that project's files**.
 
