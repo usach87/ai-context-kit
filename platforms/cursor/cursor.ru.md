@@ -2,7 +2,7 @@
 
 ## Как подключить репозиторий
 
-Официальные инструкции Cursor: [Начало работы](https://docs.cursor.com/en/get-started/quickstart), [MCP и интеграции](https://docs.cursor.com/en/tools/mcp), [GitHub для веб-агента](https://docs.cursor.com/en/background-agent/web-and-mobile).
+Официальные инструкции Cursor: [Начало работы](https://cursor.com/docs/get-started/quickstart), [MCP и интеграции](https://cursor.com/docs/mcp), [GitHub для веб-агента](https://cursor.com/docs/integrations/github).
 
 **В Cursor IDE** обычно достаточно клонировать репозиторий GitHub и открыть его как локальный проект — отдельный коннектор для чтения этих файлов не нужен. Для внешних действий с GitHub можно подключить GitHub MCP через настройки MCP. **Для Cursor Web Agent** GitHub подключается отдельно. Проверьте права доступа перед записью.
 
