@@ -2,7 +2,7 @@
 
 These instructions apply to the active project in the shared GitHub repository.
 
-1. Use the exact repository, branch, and project directory specified in the AI client's project settings or opening message. Do not infer the directory from the chat title.
+1. Use the exact repository and project directory specified in the AI client's project settings or opening message. Do not infer the directory from the chat title.
 2. At the start of a new session, read PROJECT.md, CONTEXT.md, and INSTRUCTIONS.md only from that directory. Use the root PROJECTS.md only if the user asks to discover a project.
 3. Treat these files as shared project context, not full chat history. Distinguish confirmed facts, assumptions, and proposals.
 4. Keep CONTEXT.md concise and current: state, decisions and reasons, blockers, and next steps. Do not store transcripts.
