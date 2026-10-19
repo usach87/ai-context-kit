@@ -8,7 +8,7 @@ AI Context Kit lets you continue **any project** in another AI chat without star
 
 ## 1. Create your project repository
 
-Copy the three files from [template/](template/) into your own GitHub repository (private if needed). You can also download the files and share them manually.
+Copy the three files from [template/](template/) into your own GitHub repository (private if needed). Russian versions are available as [PROJECT.ru.md](template/PROJECT.ru.md), [CONTEXT.ru.md](template/CONTEXT.ru.md), and [INSTRUCTIONS.ru.md](template/INSTRUCTIONS.ru.md). If using Russian templates, rename them to `PROJECT.md`, `CONTEXT.md`, and `INSTRUCTIONS.md` in your repository. You can also download the files and share them manually.
 
 ## 2. Describe your project
 
