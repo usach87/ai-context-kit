@@ -1,77 +1,57 @@
-# Quick start: multiple projects in one repository
+# Quick start
 
 🌐 **Language:** English · [Русский](QUICKSTART.ru.md)
 
-[← AI Context Kit README](README.md)
+[← README](README.md)
 
-Use one GitHub repository for multiple projects. Each AI chat selects **one active project** and reads only its directory.
+## 1. Create one shared repository
 
-## 1. Create a shared repository
-
-Create a GitHub repository such as `username/my-ai-context`. Use a private repository for confidential projects. Copy [PROJECTS.md](template/PROJECTS.md) to the repository root.
+Create a GitHub repository such as `username/my-ai-context`. Copy [PROJECTS.md](PROJECTS.md) to its root, then copy the entire [projects/example-project/](projects/example-project/) template folder into its `projects/` directory.
 
 ```text
 my-ai-context/
 ├── PROJECTS.md
 └── projects/
-    ├── family-app/
+    ├── Sophia/
     │   ├── PROJECT.md
     │   ├── CONTEXT.md
     │   └── INSTRUCTIONS.md
-    └── tea-business/
+    └── I-Design-Award/
         ├── PROJECT.md
         ├── CONTEXT.md
         └── INSTRUCTIONS.md
 ```
 
-`PROJECTS.md` is a small index of project names, IDs, and directories, not a collection of full project contexts.
+## 2. Rename and fill the example project folder
 
-## 2. Set up your first project
+Rename `example-project` to a recognizable, unique folder name such as `Sophia`. **No separate project ID is required.** Keep only one language's three files: English `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`, or Russian `PROJECT.ru.md`, `CONTEXT.ru.md`, `INSTRUCTIONS.ru.md` (remove `.ru` from the filenames in your repository). Remove unused language versions.
 
-Choose a stable ID such as `family-app` and create `projects/family-app/`. Copy these three templates into that folder:
+Fill the files with AI assistance, review the result, and add the project name, description, and exact directory such as `projects/Sophia/` to `PROJECTS.md`.
 
-- [PROJECT.md](template/PROJECT.md) — goals and scope.
-- [CONTEXT.md](template/CONTEXT.md) — current state and next steps.
-- [INSTRUCTIONS.md](template/INSTRUCTIONS.md) — AI working rules.
+## 3. Connect GitHub
 
-[Russian templates](template/PROJECT.ru.md) are also available: copy them and remove `.ru` from the filenames. Add a row to `PROJECTS.md` with the project ID, name, description, and directory. Ask an AI assistant to help fill the templates, and review the proposed content before saving.
+Follow the setup guide for [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), or [Codex](platforms/codex/codex.md). Use a supported integration or MCP, or provide the files manually. Verify read access; writing may require additional permissions.
 
-## 3. Connect your AI client to GitHub
+## 4. Bind the AI workspace to the exact path
 
-Follow the platform guide: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), [Codex](platforms/codex/codex.md).
+If your AI client supports persistent project instructions, create a separate AI workspace for this project and paste:
 
-Use an available GitHub integration, connector, or MCP. A custom MCP server is **not required**. Verify that the assistant can actually read the chosen directory. Write access varies by client and permissions. If GitHub access is unavailable, share the active project's three files manually.
+> GitHub repository: `username/my-ai-context`. Branch: `main`. Active project directory: `projects/Sophia/`. At the start of a new session, read `projects/Sophia/PROJECT.md`, `projects/Sophia/CONTEXT.md`, and `projects/Sophia/INSTRUCTIONS.md` from that repository and branch. Do not read other projects. If any file is unavailable, report the exact path and error; never substitute another project's context. Propose updates only inside this directory and write only after my approval.
 
-## 4. Bind an AI workspace or chat to one directory
+Replace the repository, branch, and directory. **A Git branch and a project directory are different concepts.** Project instructions provide an exact target, but do not grant GitHub access or guarantee that every client will obey them. If persistent instructions are unavailable, paste this at the start of a chat.
 
-If your AI client supports persistent project instructions, create a workspace for “Family App” and add:
+## 5. Work and save context
 
-> Shared GitHub repository: `username/my-ai-context`. Active project: `family-app`. Directory: `projects/family-app/`. At the beginning of a new session, read `PROJECT.md`, `CONTEXT.md`, and `INSTRUCTIONS.md` **only from this directory**. Work only on this project's context and propose updates for approval. If files are inaccessible, say so; do not invent their contents.
-
-Replace the example repository and ID. Use a different directory for each AI workspace. **Persistent instructions do not grant GitHub access by themselves**; configure access separately. If your client has no persistent project instructions, paste this text at the start of a new chat.
-
-## 5. Work and save approved changes
-
-After meaningful work, ask the assistant to propose updates to **`projects/family-app/CONTEXT.md`**. Review and approve before committing. Do not save full chat transcripts or load unrelated projects by default.
+After meaningful work, ask the assistant to propose changes to `projects/Sophia/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
 
 ## 6. Continue in another AI chat
 
-If the active project is already configured in the client's workspace instructions, ask it to load the latest project context.
-
-Otherwise use this prompt:
-
-> Open `username/my-ai-context`. Active project: `family-app`; directory: `projects/family-app/`. Read the three files there and summarize current status and the next step. Do not load other projects. If access fails, tell me.
-
-If you only know a project name, the assistant can use `PROJECTS.md` to find the directory. If the name is ambiguous, it should ask you to choose. **A chat title alone does not reliably select a GitHub directory.** Full chat histories are not synchronized across platforms.
+Open an AI workspace with the same configured repository and path. Ask it to fetch the latest files and confirm their exact paths. If settings do not transfer between platforms, repeat step 4. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
 
 ## 7. Add more projects
 
-Create a separate directory with the same three files for each project, then register it in `PROJECTS.md`. Avoid root-level `CONTEXT.md` and `INSTRUCTIONS.md` that could mix different projects.
+Copy `projects/example-project/`, rename the folder, fill its three files, and add a row to `PROJECTS.md`. Bind each AI workspace to its corresponding directory. Put [optional files](optional/) inside that project's folder.
 
-Optional [DECISIONS.md, TASKS.md, and SOURCES.md](optional/) files belong inside the corresponding project directory.
+**Privacy:** never commit secrets. GitHub directories do not have independent access controls; use separate repositories when access requirements differ.
 
-## Privacy
-
-Do not commit passwords, tokens, or secrets. Use a private repository for sensitive projects. GitHub folder paths are **not** separate access-control boundaries; use separate repositories if projects require different permissions.
-
-[← README](README.md) · [Быстрый старт на русском](QUICKSTART.ru.md)
+[← README](README.md) · [Русский](QUICKSTART.ru.md)
