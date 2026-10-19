@@ -24,6 +24,8 @@ Use a built-in GitHub integration/connector if supported. GitHub MCP is **option
 
 If direct GitHub access is unavailable, provide the Markdown files manually.
 
+Platform guides: [ChatGPT](platforms/chatgpt.md), [Claude](platforms/claude.md), [Cursor](platforms/cursor.md), [Codex](platforms/codex.md). You do not need to copy or fill in `platforms/`; these are reference guides.
+
 ## 4. Work, then save
 
 Ask the assistant to read the latest three files. When you finish a meaningful session, ask it to **propose** changes to CONTEXT.md, including key decisions and next steps. Approve the changes before saving or committing them.
