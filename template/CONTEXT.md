@@ -3,28 +3,22 @@
 Last reviewed: [YYYY-MM-DD]
 
 ## Current phase
-[Discovery / Planning / Execution / Review / Other]
+[What stage is the project in?]
 
 ## What is true now
-- [Verified current fact]
+- [Current verified fact]
+
+## Key decisions
+- [Important agreed decision and short reason]
 
 ## Recent progress
-- [What was completed]
+- [Meaningful recent result]
 
-## Open questions
-- [What remains uncertain]
+## Open questions and blockers
+- [Unresolved question, risk, or blocker]
 
-## Risks and blockers
-- [Known issue]
-
-## Next recommended step
-[One concrete next step]
+## Next step
+[One concrete action to take next]
 
 ## Handoff
-[Short summary for the next AI session; avoid duplicating the entire project history]
-
-## Integration smoke test
-- **Test ID:** AI-CONTEXT-KIT-2026-10-19
-- **Status:** ChatGPT GitHub write verification
-- **Purpose:** Confirm that another AI client can read a newly committed change from the shared repository.
-- **Note:** Temporary test section; remove after cross-client verification.
+[Short note for the next AI chat: what it needs to know to continue without re-reading the whole conversation]
