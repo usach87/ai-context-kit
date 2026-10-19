@@ -6,7 +6,7 @@
 
 ## 1. Create one shared repository
 
-Create a GitHub repository such as `username/my-ai-context`. It can be public or private; a private repository is recommended for personal or commercial projects. To let AI assistants read and update files in a private repository, connect GitHub in each AI client you use and grant access to that repository. Private files are inaccessible without authorization. Copy [PROJECTS.md](PROJECTS.md) to its root, then copy the entire [projects/example-project/](projects/example-project/) template folder into its `projects/` directory.
+Create a GitHub repository such as `username/my-ai-context`. It can be public or private; a private repository is recommended for personal or commercial projects. To let AI assistants read and update files in a private repository, connect GitHub in each AI client you use and grant access to that repository. Private files are inaccessible without authorization. Add [PROJECTS.md](PROJECTS.md) to the repository root and the [projects/example-project/](projects/example-project/) template folder to its `projects/` directory.
 
 ```text
 my-ai-context/
