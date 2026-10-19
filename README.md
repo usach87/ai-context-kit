@@ -9,8 +9,8 @@ AI Context Kit is a small, open Markdown toolkit for **multiple projects**: busi
 ## Get started
 
 1. Follow the [multi-project quick start](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
-2. Create a shared GitHub repository and copy [PROJECTS.md](template/PROJECTS.md) to its root ([Russian template](template/PROJECTS.ru.md)).
-3. For each project, create `projects/<project-id>/` and copy the **three files** from [template/](template/) into it. [Russian versions](template/PROJECT.ru.md) are available; remove `.ru` from the filenames.
+2. Create a shared GitHub repository and copy [PROJECTS.md](PROJECTS.md) to its root ([Russian template](PROJECTS.ru.md)).
+3. For each project, copy [projects/example-project/](projects/example-project/), rename it, and use `projects/project-folder/` and copy the **three files** from [projects/example-project/](projects/example-project/) into it. [Russian versions](projects/example-project/PROJECT.ru.md) are available; remove `.ru` from the filenames.
 4. Register the project in `PROJECTS.md`, then connect your AI client to GitHub or share the files manually.
 5. Set the active project's repository path in your AI workspace instructions or opening chat prompt. Read and update **only that project's files**.
 
@@ -32,9 +32,9 @@ my-ai-context/
 
 | File | Purpose |
 | --- | --- |
-| [PROJECT.md](template/PROJECT.md) | Project goals, audience, scope, constraints |
-| [CONTEXT.md](template/CONTEXT.md) | Current state, key decisions, recent progress, next step |
-| [INSTRUCTIONS.md](template/INSTRUCTIONS.md) | How an AI assistant should use and update the shared context |
+| [PROJECT.md](projects/example-project/PROJECT.md) | Project goals, audience, scope, constraints |
+| [CONTEXT.md](projects/example-project/CONTEXT.md) | Current state, key decisions, recent progress, next step |
+| [INSTRUCTIONS.md](projects/example-project/INSTRUCTIONS.md) | How an AI assistant should use and update the shared context |
 
 Each project has its own three files. The root-level `PROJECTS.md` is a lightweight index, not a shared context dump. Need more structure later? See [optional/](optional/) for separate decision, task, and source logs. These are **not required** for the MVP.
 
