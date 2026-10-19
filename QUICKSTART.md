@@ -32,23 +32,27 @@ Fill the files with AI assistance, review the result, and add the project name, 
 
 Follow the setup guide for [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), or [Codex](platforms/codex/codex.md). Use a supported integration or MCP, or provide the files manually. Verify read access; writing may require additional permissions.
 
-## 4. Bind the AI workspace to the exact path
+## 4. Create a project in your AI client
 
-If your AI client supports persistent project instructions, create a separate AI workspace for this project and paste:
+Create a separate **Project** in ChatGPT or Claude for `project-one` (or an equivalent workspace in another client, when available). Start new chats **inside that Project** so its persistent instructions apply.
+
+## 5. Set the GitHub directory in Project Instructions
+
+Open **Project Instructions** for the AI Project you created and paste:
 
 > GitHub repository: `username/my-ai-context`. Branch: `main`. Active project directory: `projects/project-one/`. At the start of a new session, read `projects/project-one/PROJECT.md`, `projects/project-one/CONTEXT.md`, and `projects/project-one/INSTRUCTIONS.md` from that repository and branch. Do not read other projects. If any file is unavailable, report the exact path and error; never substitute another project's context. Propose updates only inside this directory and write only after my approval.
 
 Replace the repository, branch, and directory. **A Git branch and a project directory are different concepts.** Project instructions provide an exact target, but do not grant GitHub access or guarantee that every client will obey them. If persistent instructions are unavailable, paste this at the start of a chat.
 
-## 5. Work and save context
+## 6. Work and save context
 
 After meaningful work, ask the assistant to propose changes to `projects/project-one/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
 
-## 6. Continue in another AI chat
+## 7. Continue in another AI chat
 
-Open an AI workspace with the same configured repository and path. Ask it to fetch the latest files and confirm their exact paths. If settings do not transfer between platforms, repeat step 4. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
+Open an AI workspace with the same configured repository and path. Ask it to fetch the latest files and confirm their exact paths. If settings do not transfer between platforms, repeat step 5. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
 
-## 7. Add more projects
+## 8. Add more projects
 
 Copy `projects/example-project/`, rename the folder, fill its three files, and add a row to `PROJECTS.md`. Bind each AI workspace to its corresponding directory. Put [optional files](optional/) inside that project's folder.
 
