@@ -9,7 +9,7 @@ AI Context Kit is a small, open Markdown template for **any project**: business,
 ## Get started
 
 1. Read [QUICKSTART.md](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
-2. Copy the **three files** in [template/](template/) into your own repository.
+2. Copy the **three files** in [template/](template/) into your own repository. [Russian templates](template/PROJECT.ru.md) are also available; if you choose them, remove `.ru` from the filenames in your repository.
 3. Ask your AI assistant to help fill them in.
 4. Connect GitHub through an available integration, connector, or MCP (optional), or share the files manually.
 5. Ask each new AI chat to read the latest files. Review and approve updates before saving.
