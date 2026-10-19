@@ -1,5 +1,11 @@
 # Codex
 
+## Как подключить репозиторий
+
+Официальные инструкции OpenAI: [Начало работы с Codex](https://developers.openai.com/codex/quickstart), [MCP в Codex](https://developers.openai.com/codex/mcp).
+
+**В Codex CLI или IDE** откройте локально клонированный GitHub-репозиторий — Codex сможет читать файлы проекта без отдельной GitHub-интеграции. Для доступа к GitHub API можно настроить MCP. **В облачной среде Codex** подключение репозитория и разрешения настраиваются отдельно. Всегда проверяйте доступные инструменты чтения и записи.
+
 🌐 **Язык:** Русский · [English](codex.md)
 
 [← README](../../README.ru.md) · [Быстрый старт](../../QUICKSTART.ru.md)
