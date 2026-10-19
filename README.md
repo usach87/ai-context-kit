@@ -53,7 +53,7 @@ Platform setup guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platfor
 
 ## Status
 
-Minimal MVP. No backend or custom MCP server required.
+Minimal MVP.
 
 ## License
 
