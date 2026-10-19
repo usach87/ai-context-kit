@@ -73,13 +73,18 @@ Fill in the project name in `PROJECT.md` first (step 2). It must match the expec
 
 After meaningful work, ask the assistant to propose changes to `projects/project-one/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
 
-## 7. Continue in another AI chat
+## 7. Continue working on another AI platform
 
-If you start a new chat inside an already configured AI Project, you do not need to configure Project Instructions again.
+For example, you've set up your project in ChatGPT and now want to continue in Claude.
 
-If you switch to another AI platform or create a new AI Project, first connect GitHub (step 3) and configure Project Instructions (step 5) with the same repository and directory.
+1. **Connect GitHub** to the new AI platform and grant access to the context repository (step 3).
+2. **Create an AI Project** on the new platform (step 4).
+3. **Configure Project Instructions** using the example in step 5. Specify the same GitHub repository and project directory.
+4. **Open a chat** inside the new AI Project and ask it to load `PROJECT.md`, `CONTEXT.md`, and `INSTRUCTIONS.md`. Verify that the AI read the files from the correct directory.
 
-Before continuing, ask the AI to load the latest context files and confirm their paths. `PROJECTS.md` is for browsing projects, **not a required lookup on every session**.
+You can now continue working with the context stored in GitHub.
+
+**On subsequent switches** between already configured AI Projects, you don't need to repeat these steps. Just open a new chat in the relevant project and load the latest context.
 
 ## 8. Add more projects
 
