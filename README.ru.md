@@ -9,8 +9,8 @@ AI Context Kit — открытый набор Markdown-шаблонов для 
 ## Быстрый старт
 
 1. Откройте [пошаговую инструкцию для нескольких проектов](QUICKSTART.ru.md).
-2. Создайте общий GitHub-репозиторий и скопируйте в корень [PROJECTS.ru.md](template/PROJECTS.ru.md), переименовав в `PROJECTS.md`.
-3. Для каждого проекта создайте папку `projects/<project-id>/` и скопируйте в неё три [русских](template/PROJECT.ru.md) или [английских](template/PROJECT.md) шаблона. Итоговые имена: `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`.
+2. Создайте общий GitHub-репозиторий и скопируйте в корень [PROJECTS.ru.md](PROJECTS.ru.md), переименовав в `PROJECTS.md`.
+3. Для каждого проекта скопируйте папку [projects/example-project/](projects/example-project/), переименуйте её и используйте `projects/project-folder/` и скопируйте в неё три [русских](projects/example-project/PROJECT.ru.md) или [английских](projects/example-project/PROJECT.md) шаблона. Итоговые имена: `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`.
 4. Добавьте проект в реестр `PROJECTS.md` и настройте доступ AI к GitHub.
 5. Укажите путь активного проекта в постоянных инструкциях AI-проекта или в первом сообщении чата. AI должен читать и изменять **только файлы выбранного проекта**.
 
@@ -32,9 +32,9 @@ my-ai-context/
 
 | Файл | Назначение |
 | --- | --- |
-| [PROJECT.md](template/PROJECT.ru.md) ([EN](template/PROJECT.md)) | Цели, аудитория, границы и ограничения проекта |
-| [CONTEXT.md](template/CONTEXT.ru.md) ([EN](template/CONTEXT.md)) | Текущее состояние, ключевые решения, последние результаты и следующий шаг |
-| [INSTRUCTIONS.md](template/INSTRUCTIONS.ru.md) ([EN](template/INSTRUCTIONS.md)) | Правила работы AI с общим контекстом |
+| [PROJECT.md](projects/example-project/PROJECT.ru.md) ([EN](projects/example-project/PROJECT.md)) | Цели, аудитория, границы и ограничения проекта |
+| [CONTEXT.md](projects/example-project/CONTEXT.ru.md) ([EN](projects/example-project/CONTEXT.md)) | Текущее состояние, ключевые решения, последние результаты и следующий шаг |
+| [INSTRUCTIONS.md](projects/example-project/INSTRUCTIONS.ru.md) ([EN](projects/example-project/INSTRUCTIONS.md)) | Правила работы AI с общим контекстом |
 
 Три файла хранятся **в каждой папке проекта**, а корневой `PROJECTS.md` нужен только для поиска нужной директории. Если проект усложнится, можно использовать дополнительные файлы из папки [optional/](optional/): журнал решений, задачи и источники. **Для начала они не нужны.**
 
