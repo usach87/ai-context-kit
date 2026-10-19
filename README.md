@@ -53,7 +53,7 @@ Platform setup guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platfor
 
 ## Status
 
-Minimal MVP.
+Public Beta.
 
 ## License
 
