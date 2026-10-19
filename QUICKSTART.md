@@ -48,13 +48,13 @@ Project:
 
 Rules:
 1. At the start of a new session, read PROJECT.md, CONTEXT.md,
-   and INSTRUCTIONS.md only from the specified directory and branch.
+   and INSTRUCTIONS.md only from the specified directory.
 2. Verify that all three files are accessible and compare the name
    in PROJECT.md with the expected name. If the path is missing,
    a read fails, or the names differ, report the issue and ask.
    Never guess a directory or substitute another project's files.
 3. After verification, briefly report the actual repository,
-   branch, directory, and project name you read.
+   directory and project name you read.
 4. Adapt to the user's task. Distinguish verified facts,
    assumptions, and proposals.
 5. After meaningful work, propose updates only to this project's
