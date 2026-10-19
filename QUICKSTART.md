@@ -71,7 +71,7 @@ Fill in the project name in `PROJECT.md` first (step 2). It must match the expec
 
 ## 6. Work and save context
 
-After meaningful work, ask the assistant to propose changes to `projects/project-one/CONTEXT.md`. Review and approve before writing. Do not load unrelated projects or save full transcripts.
+After meaningful work, ask the assistant to propose changes to `projects/project-one/CONTEXT.md`. Review and approve before writing. Before important decisions and context updates, the AI should check the latest `CONTEXT.md` in GitHub. For writes, it should use a version/SHA check when supported, and stop to reconcile conflicts instead of overwriting changes. If the integration cannot enforce version checks, it must say so. Do not load unrelated projects or save full transcripts.
 
 ## 7. Continue working on another AI platform
 
