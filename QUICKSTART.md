@@ -36,9 +36,9 @@ Follow the setup guide for [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](pla
 
 Create a separate **Project** in ChatGPT or Claude for `project-one` (or an equivalent workspace in another client, when available). Start new chats **inside that Project** so its persistent instructions apply.
 
-## 5. Configure Project Instructions: context and AI role
+## 5. Configure Project Instructions
 
-Open **Project Instructions** in the AI Project you created. Specify both the GitHub location and **what kind of help** you want. Copy the example and replace the bracketed values:
+Open **Project Instructions** in the AI Project you created. Copy the example, fill in your project's details, and optionally add your own preferences for how the AI should help:
 
 ```text
 Project:
@@ -46,11 +46,6 @@ Project:
 - Branch: main
 - Directory: projects/project-one/
 - Expected name in PROJECT.md: [project name]
-
-AI role:
-- Primary: [developer / analyst / designer / general assistant]
-- Additional roles: [optional]
-- Preferences: [e.g. concise answers, detailed plans, code examples]
 
 Rules:
 1. At the start of a new session, read PROJECT.md, CONTEXT.md,
@@ -61,8 +56,8 @@ Rules:
    Never guess a directory or substitute another project's files.
 3. After verification, briefly report the actual repository,
    branch, directory, and project name you read.
-4. Work in the selected role while adapting to the user's task.
-   Distinguish verified facts, assumptions, and proposals.
+4. Adapt to the user's task. Distinguish verified facts,
+   assumptions, and proposals.
 5. After meaningful work, propose updates only to this project's
    CONTEXT.md. Show changes and await approval before writing.
    Do not modify other projects.
@@ -70,7 +65,7 @@ Rules:
    the files; ask the user to provide them manually.
 ```
 
-**Roles shape the help you receive:** a developer focuses on architecture and code, an analyst on requirements and validation, and a designer on UX and visual solutions. You can select a general assistant or multiple roles and switch roles for a specific task.
+**How to describe the AI's role:** if you need a particular kind of help, add a sentence in your own words to Project Instructions. For example: “Help me as an experienced developer: suggest architecture and code examples”; “Help me analyze requirements, risks, and hypotheses”; or “Help me with UX and interface design.” You can describe multiple areas or omit a role entirely and specify it in each chat. Focus on **the tasks and outcomes you expect**, not just a job title.
 
 Fill in the project name in `PROJECT.md` during step 2 before enabling the name check. The expected name should match the file content; it does not have to match the folder or AI Project name.
 
