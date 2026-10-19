@@ -30,7 +30,7 @@ AI Context Kit позволяет продолжить работу над **л�
 
 Если прямой доступ к GitHub недоступен, загрузите Markdown-файлы в чат вручную.
 
-Инструкции для отдельных платформ: [ChatGPT](platforms/chatgpt.ru.md), [Claude](platforms/claude.ru.md), [Cursor](platforms/cursor.ru.md), [Codex](platforms/codex.ru.md). Папку `platforms/` копировать или заполнять не нужно — это справочные инструкции.
+Инструкции для отдельных платформ: [ChatGPT](platforms/chatgpt/chatgpt.ru.md), [Claude](platforms/claude/claude.ru.md), [Cursor](platforms/cursor/cursor.ru.md), [Codex](platforms/codex/codex.ru.md). Папку `platforms/` копировать или заполнять не нужно — это справочные инструкции.
 
 ## 4. Работайте и сохраняйте результат
 
