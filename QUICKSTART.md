@@ -20,6 +20,8 @@ Ask your AI assistant: "Help me fill in PROJECT.md, CONTEXT.md, and INSTRUCTIONS
 
 ## 3. Connect your AI chat
 
+**GitHub setup differs by AI platform.** Follow the relevant guide: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), [Codex](platforms/codex/codex.md). Each guide links to official GitHub connection or integration setup documentation.
+
 Use a built-in GitHub integration/connector if supported. GitHub MCP is **optional**, not required. Confirm that the integration can read your repository; writing may require different permissions or may be unavailable.
 
 If direct GitHub access is unavailable, provide the Markdown files manually.
