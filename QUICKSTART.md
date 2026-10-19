@@ -1,21 +1,37 @@
 # Quick start
 
-AI Context Kit is a portable set of Markdown files for keeping project knowledge independent of any single AI assistant.
+AI Context Kit lets you continue **any project** in another AI chat without starting from scratch.
 
-## 1. Create your own copy
-Use **Use this template** on GitHub (once enabled), or download this repository and create a private repository for your project. Do not put private data in a public repository.
+## 1. Create your project repository
 
-## 2. Fill in the context
-Start with `template/PROJECT.md`, `template/INSTRUCTIONS.md`, and `template/CONTEXT.md`. Add decisions to `template/DECISIONS.md` and tasks to `template/TASKS.md`. Rename or copy the `template/` directory to your project root if you prefer.
+Copy the three files from [template/](template/) into your own GitHub repository (private if needed). You can also download the files and share them manually.
 
-## 3. Connect an AI assistant
-Use the AI client's built-in GitHub integration or connector when available. An official or custom GitHub MCP server is **optional**, not a prerequisite. Authorize access to **your** repository with the minimum necessary permissions and check read and write capabilities separately. Follow `platforms/chatgpt.md` for a ChatGPT test. If direct access is unavailable, upload or paste the Markdown files manually.
+## 2. Describe your project
 
-## 4. Work and save
-Ask the assistant to read `PROJECT.md`, `INSTRUCTIONS.md`, and `CONTEXT.md` before starting. After work, ask it to propose updates to decisions, tasks, and current context. Review changes before committing.
+Ask your AI assistant: "Help me fill in PROJECT.md, CONTEXT.md, and INSTRUCTIONS.md for my project. Ask me only the questions you need."
 
-## 5. Switch assistants
-In the next assistant, request a fresh read from GitHub. Neither a GitHub connector nor an MCP server automatically injects repository contents into every conversation. Ask for a fresh read, and verify that the assistant retrieved the current files.
+- **PROJECT.md** — what the project is and what success looks like.
+- **CONTEXT.md** — what's happening now, key decisions, progress, and next steps.
+- **INSTRUCTIONS.md** — how assistants should work with this context.
 
-## Security
-Never commit passwords, tokens, personal records, or other secrets. GitHub visibility and MCP permissions are separate controls. Use a private repository for personal or confidential context.
+## 3. Connect your AI chat
+
+Use a built-in GitHub integration/connector if supported. GitHub MCP is **optional**, not required. Confirm that the integration can read your repository; writing may require different permissions or may be unavailable.
+
+If direct GitHub access is unavailable, provide the Markdown files manually.
+
+## 4. Work, then save
+
+Ask the assistant to read the latest three files. When you finish a meaningful session, ask it to **propose** changes to CONTEXT.md, including key decisions and next steps. Approve the changes before saving or committing them.
+
+## 5. Continue in another AI chat
+
+Ask the new assistant to fetch the current files from your repository, or upload them manually. Verify it used the latest content. No integration automatically synchronizes entire chat histories.
+
+## Optional files
+
+If CONTEXT.md becomes too large, add separate logs from [optional/](optional/): DECISIONS.md, TASKS.md, and SOURCES.md.
+
+## Privacy
+
+Do not commit passwords, access tokens, or sensitive personal data. Use a private repository for confidential projects.
