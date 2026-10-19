@@ -24,7 +24,7 @@ my-ai-context/
 
 ## 2. Rename and fill the example project folder
 
-Rename `example-project` to a recognizable, unique folder name such as `project-one`. Keep only one language's three files: English `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`, or Russian `PROJECT.ru.md`, `CONTEXT.ru.md`, `INSTRUCTIONS.ru.md` (remove `.ru` from the filenames in your repository). Remove unused language versions.
+Rename `example-project` to a recognizable, unique folder name such as `project-one`. Choose either the English or Russian templates. Keep three files: `PROJECT.md`, `CONTEXT.md`, and `INSTRUCTIONS.md`. For Russian templates, remove `.ru` from the filenames. Delete the other language's files.
 
 Fill the files with AI assistance, review the result, and add the project name, description, and exact directory such as `projects/project-one/` to `PROJECTS.md`.
 
