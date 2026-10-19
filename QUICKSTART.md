@@ -24,7 +24,7 @@ Use a built-in GitHub integration/connector if supported. GitHub MCP is **option
 
 If direct GitHub access is unavailable, provide the Markdown files manually.
 
-Platform guides: [ChatGPT](platforms/chatgpt.md), [Claude](platforms/claude.md), [Cursor](platforms/cursor.md), [Codex](platforms/codex.md). You do not need to copy or fill in `platforms/`; these are reference guides.
+Platform guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), [Codex](platforms/codex/codex.md). You do not need to copy or fill in `platforms/`; these are reference guides.
 
 ## 4. Work, then save
 
