@@ -8,8 +8,9 @@ These are the shared rules for **working on this project**. The repository, dire
 4. Keep `CONTEXT.md` concise and current: status, decisions and reasons, blockers, and next steps. Do not store full transcripts.
 5. After meaningful work, propose specific `CONTEXT.md` updates. Show them to the user and **wait for approval before writing**. Do not silently remove previous decisions or important facts.
 6. Never commit passwords, keys, or other secrets. Do not modify files in other projects without an explicit request.
-7. Do not re-fetch unchanged files before every response. Check current versions when a task requires fresh information.
-8. Follow the additional rules below.
+7. **Freshness check:** Do not re-fetch files before every response. Before important decisions that depend on project status, and before proposing or saving a context update, re-read the latest `CONTEXT.md` from GitHub. Do not assume a version loaded earlier in the chat is still current.
+8. **Optimistic concurrency control:** Before saving, compare the latest `CONTEXT.md` with the version used to prepare the proposed changes; reconcile intervening edits with the user. Where the write integration supports it, use the file's current SHA/version as a precondition for the update. On a version conflict, stop, re-read, and seek approval for the revised change; never overwrite silently. If version-checked writes are unavailable, disclose that protection is not guaranteed and ask the user to apply the approved change through a version-controlled workflow.
+9. Follow the additional rules below.
 
 ## Project-specific rules
 
