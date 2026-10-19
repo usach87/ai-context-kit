@@ -1,5 +1,11 @@
 # ChatGPT + GitHub integration: test plan
 
+## Connect GitHub
+
+Official OpenAI guide: [Connecting GitHub to ChatGPT](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt-drease).
+
+Open **Settings → Plugins** (or **Apps** where available), select GitHub, authorize your account, and allow access to the relevant repository. Availability varies by plan and ChatGPT mode. Verify read and write capabilities separately.
+
 🌐 **Language:** English · [Русский](chatgpt.ru.md)
 
 [← README](../../README.md) · [Quick start](../../QUICKSTART.md)
