@@ -43,7 +43,6 @@ Open **Project Instructions** in the AI Project you created. Copy the example, f
 ```text
 Project:
 - GitHub repository: username/my-ai-context
-- Branch: main
 - Directory: projects/project-one/
 - Expected name in PROJECT.md: [project name]
 
@@ -63,13 +62,17 @@ Rules:
    Do not modify other projects.
 6. If GitHub access is unavailable, do not claim to have read
    the files; ask the user to provide them manually.
-```
 
-**How to describe the AI's role:** if you need a particular kind of help, add a sentence in your own words to Project Instructions. For example: “Help me as an experienced developer: suggest architecture and code examples”; “Help me analyze requirements, risks, and hypotheses”; or “Help me with UX and interface design.” You can describe multiple areas or omit a role entirely and specify it in each chat. Focus on **the tasks and outcomes you expect**, not just a job title.
+AI role (optional)
+
+In Project Instructions, you can describe the kind of help you expect from AI: development, analysis, design, or other tasks. It's better to state specific expectations, for example: “Help me design software architecture, write code, and find bugs.”
+
+If your tasks vary, you can leave the role unspecified and describe it directly in each chat.
+```
 
 Fill in the project name in `PROJECT.md` during step 2 before enabling the name check. The expected name should match the file content; it does not have to match the folder or AI Project name.
 
-**Important:** a Git branch (`main`) is different from a directory (`projects/project-one/`). Project Instructions do not grant GitHub access or technically guarantee isolation; verify actual file reads. If persistent instructions are unavailable, paste this at the beginning of a new chat.
+**Important:** Project Instructions do not grant GitHub access or technically guarantee isolation; verify actual file reads. If persistent instructions are unavailable, paste this at the beginning of a new chat.
 
 ## 6. Work and save context
 
