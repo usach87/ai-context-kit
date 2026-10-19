@@ -24,7 +24,7 @@ AI Context Kit — открытый минимальный набор Markdown-�
 
 Если проект усложнится, можно использовать дополнительные файлы из папки [optional/](optional/): журнал решений, задачи и источники. **Для начала они не нужны.**
 
-Инструкции для платформ: [ChatGPT](platforms/chatgpt.md), [Claude](platforms/claude.md), [Cursor](platforms/cursor.md), [Codex](platforms/codex.md) (пока на английском).
+Инструкции для платформ на русском: [ChatGPT](platforms/chatgpt.ru.md), [Claude](platforms/claude.ru.md), [Cursor](platforms/cursor.ru.md), [Codex](platforms/codex.ru.md).
 
 ## Как это работает
 
