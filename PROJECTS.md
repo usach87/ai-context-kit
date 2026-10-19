@@ -1,9 +1,9 @@
 # Project registry
 
-This file is an index only. Keep detailed context inside each project's directory.
+This file lists projects and their directories. Each project has its own three context files.
 
-| Project ID | Name | Description | Directory |
-| --- | --- | --- | --- |
-| example-project | Example Project | [Short description] | projects/example-project/ |
+| Project | Description | Directory |
+| --- | --- | --- |
+| Example Project | [Short description] | projects/example-project/ |
 
-Use a unique, stable project ID (for example, `family-app`). When adding a project, create its directory, copy PROJECT.md, CONTEXT.md and INSTRUCTIONS.md into it, then add one row here. Do not put secrets in this registry.
+To add a project, copy `projects/example-project/` to a folder named after your project, fill its three files, and add a row here. Folder names must be unique. Do not store secrets.
