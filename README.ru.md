@@ -10,7 +10,7 @@ AI Context Kit — открытый набор Markdown-шаблонов для 
 
 1. Откройте [пошаговую инструкцию для нескольких проектов](QUICKSTART.ru.md).
 2. Создайте общий GitHub-репозиторий и скопируйте в корень [PROJECTS.ru.md](PROJECTS.ru.md), переименовав в `PROJECTS.md`.
-3. Для каждого проекта скопируйте папку [projects/example-project/](projects/example-project/), переименуйте её и используйте `projects/project-folder/` и скопируйте в неё три [русских](projects/example-project/PROJECT.ru.md) или [английских](projects/example-project/PROJECT.md) шаблона. Итоговые имена: `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`.
+3. Для каждого проекта скопируйте папку [projects/example-project/](projects/example-project/) в свой репозиторий и переименуйте её (например, `projects/project-one/`). Оставьте три [русских](projects/example-project/PROJECT.ru.md) или [английских](projects/example-project/PROJECT.md) шаблона. Итоговые имена: `PROJECT.md`, `CONTEXT.md`, `INSTRUCTIONS.md`.
 4. Добавьте проект в реестр `PROJECTS.md` и настройте доступ AI к GitHub.
 5. Укажите путь активного проекта в постоянных инструкциях AI-проекта или в первом сообщении чата. AI должен читать и изменять **только файлы выбранного проекта**.
 
