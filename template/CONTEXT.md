@@ -22,3 +22,9 @@ Last reviewed: [YYYY-MM-DD]
 
 ## Handoff
 [Short summary for the next AI session; avoid duplicating the entire project history]
+
+## Integration smoke test
+- **Test ID:** AI-CONTEXT-KIT-2026-10-19
+- **Status:** ChatGPT GitHub write verification
+- **Purpose:** Confirm that another AI client can read a newly committed change from the shared repository.
+- **Note:** Temporary test section; remove after cross-client verification.
