@@ -4,15 +4,29 @@
 
 **Share project context between AI chats — without depending on one AI platform.**
 
-AI Context Kit is a small, open Markdown template for **any project**: business, research, creative, personal, or software. Keep a common source of truth in your own GitHub repository, and use it from ChatGPT, Claude, or another AI assistant.
+AI Context Kit is a small, open Markdown toolkit for **multiple projects**: business, research, creative, personal, or software. Keep each project's context in its own directory inside one GitHub repository, and continue from ChatGPT, Claude, or another AI assistant.
 
 ## Get started
 
-1. Read [QUICKSTART.md](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
-2. Copy the **three files** in [template/](template/) into your own repository. [Russian templates](template/PROJECT.ru.md) are also available; if you choose them, remove `.ru` from the filenames in your repository.
-3. Ask your AI assistant to help fill them in.
-4. Connect GitHub through an available integration, connector, or MCP (optional), or share the files manually.
-5. Ask each new AI chat to read the latest files. Review and approve updates before saving.
+1. Follow the [multi-project quick start](QUICKSTART.md) ([на русском](QUICKSTART.ru.md)).
+2. Create a shared GitHub repository and copy [PROJECTS.md](template/PROJECTS.md) to its root ([Russian template](template/PROJECTS.ru.md)).
+3. For each project, create `projects/<project-id>/` and copy the **three files** from [template/](template/) into it. [Russian versions](template/PROJECT.ru.md) are available; remove `.ru` from the filenames.
+4. Register the project in `PROJECTS.md`, then connect your AI client to GitHub or share the files manually.
+5. Set the active project's repository path in your AI workspace instructions or opening chat prompt. Read and update **only that project's files**.
+
+```text
+my-ai-context/
+├── PROJECTS.md
+└── projects/
+    ├── family-app/
+    │   ├── PROJECT.md
+    │   ├── CONTEXT.md
+    │   └── INSTRUCTIONS.md
+    └── tea-business/
+        ├── PROJECT.md
+        ├── CONTEXT.md
+        └── INSTRUCTIONS.md
+```
 
 ## The three essential files
 
@@ -22,7 +36,7 @@ AI Context Kit is a small, open Markdown template for **any project**: business,
 | [CONTEXT.md](template/CONTEXT.md) | Current state, key decisions, recent progress, next step |
 | [INSTRUCTIONS.md](template/INSTRUCTIONS.md) | How an AI assistant should use and update the shared context |
 
-Need more structure later? See [optional/](optional/) for separate decision, task, and source logs. These are **not required** for the MVP.
+Each project has its own three files. The root-level `PROJECTS.md` is a lightweight index, not a shared context dump. Need more structure later? See [optional/](optional/) for separate decision, task, and source logs. These are **not required** for the MVP.
 
 Platform setup guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platforms/claude/claude.md), [Cursor](platforms/cursor/cursor.md), [Codex](platforms/codex/codex.md). ([Русские версии](README.ru.md))
 
@@ -33,6 +47,7 @@ Platform setup guides: [ChatGPT](platforms/chatgpt/chatgpt.md), [Claude](platfor
 - **User-owned:** Your own repository and revision history.
 - **MCP optional:** A suitable built-in GitHub integration is enough; manual sharing is a fallback.
 - **Explicit approval:** Review significant context changes before writing.
+- **Project isolation:** The AI should resolve the active directory and not read other projects by default. GitHub folders do not provide separate access permissions.
 - **No automatic chat sync:** Assistants must fetch fresh context and save approved changes; capabilities vary by client.
 - **Privacy:** Keep sensitive information out of public repositories; use a private repository when needed.
 
