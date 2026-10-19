@@ -18,11 +18,11 @@ AI Context Kit is a small, open Markdown toolkit for **multiple projects**: busi
 my-ai-context/
 ├── PROJECTS.md
 └── projects/
-    ├── family-app/
+    ├── project-one/
     │   ├── PROJECT.md
     │   ├── CONTEXT.md
     │   └── INSTRUCTIONS.md
-    └── tea-business/
+    └── project-two/
         ├── PROJECT.md
         ├── CONTEXT.md
         └── INSTRUCTIONS.md
